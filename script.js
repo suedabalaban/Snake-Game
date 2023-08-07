@@ -1,4 +1,4 @@
-//getting playBoard from html document and assigning it to a const variable
+//getting elements from html document and assigning them to const variables
 const playBoard = document.querySelector(".play-board");
 const scoreElement = document.querySelector(".score");
 const highScoreElement = document.querySelector(".high-score");
