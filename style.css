@@ -1,0 +1,84 @@
+/* Importing google font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/* setting up game screen placement */
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;
+    background-color: rgb(204, 218, 231);
+}
+/* header features */
+.cover{
+    width: 65vmin;
+    height: 70vmin;
+    background: #567097e5;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+/* score and high score features */
+.game-details{
+    color:#e9eaecfb;
+    font-size: 1rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+/* main game screen properties */
+.play-board{
+  width : 100%;  
+  height : 100%;
+  display: grid;
+  grid-template: repeat(30,1fr) / repeat(30,1fr); /* 30x30 grid*/
+  background-color:#3d5874e5;
+}
+/* food properties */
+.play-board .food{
+    background-color:#c1cbcee5;
+}
+/* snake properties */
+.play-board .head{
+    background-color: #2aa37be5;
+}
+/* control section */
+.control-buttons{
+    display: none;
+    justify-content: space-between;
+}
+/* control button properties */
+.control-buttons i{
+    padding: 25px 0;
+    color: #e9eaecfb;
+    width: calc(100% / 4);
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-right : 1px solid #567097e5;
+}
+/* media query to show the control buttons
+ only on small devices */
+ @media screen and (max-width: 800px){
+    .cover{
+        width: 90vmin;
+        height: 115vmin;
+    }
+    .game-details{
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+    .control-buttons{
+        display: flex;
+    }
+    .control-buttons i{
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+ }
