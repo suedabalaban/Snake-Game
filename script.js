@@ -82,7 +82,7 @@ function initGame () {
         snakeBody[i] = snakeBody[i-1];
     }
 
-    //setting the first element of snake body to current snake position
+    //setting the first element of snSake body to current snake position
     snakeBody[0] = [snakeX,snakeY];
 
     //updating snake's head position
